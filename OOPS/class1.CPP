@@ -21,11 +21,11 @@ public:
         // it will assign the values of all the attributes as a grabage 
     } 
     // making another constructor
-    Student(int number , int roll , string naam){
+    Student(int number , int roll , string naam){  // parameters 
         marks=number;
         rollno=roll;
         name=naam;
-    } 
+    }
 };
 // constructure doesn't have any return type , constructure are public always 
 // their can be multiple constructures
@@ -38,7 +38,7 @@ int main(){
     Student s1;    // s is the instance of the student class
     s1.gaming();
     s1.sleeping();
-    Student s2(95, 1 , "ram");
+    Student s2(95, 1 , "ram"); // arguments 
     cout<<"marks of the s2:- "<<s2.marks<<endl;
     cout<<s1.no;
     return 0;
