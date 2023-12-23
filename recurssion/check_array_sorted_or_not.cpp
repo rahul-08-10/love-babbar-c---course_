@@ -4,7 +4,6 @@ int sorte(int a , int x[] , int index){
     if(index>a){
         
     }
-    if
 }
 int main(){
     int a;

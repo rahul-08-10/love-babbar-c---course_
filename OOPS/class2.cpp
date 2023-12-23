@@ -27,9 +27,9 @@ class student{
     }
     // paramter constructor 
     student(int roll , int cl , string naam){  // paramters 
-        rollno=roll;
-        clas=cl;
-        name=naam;
+        this->rollno=roll;
+        this->clas=cl;
+        this->name=naam;
         cout<<"parameter constructor"<<endl; 
     }
 };

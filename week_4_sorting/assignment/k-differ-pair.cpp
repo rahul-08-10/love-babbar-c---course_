@@ -1,9 +1,9 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 // using two pointer approach 
 int diff(vector<int>a  ,  int k){ 
+    sort(a.begin() , a.end());
+    set<pair<int , int >>ans;
     int i=0,j=1;
     while(i<sizeof(a)){
         int difference=a[i]-a[j];
@@ -21,19 +21,15 @@ int diff(vector<int>a  ,  int k){
         if(i==j){
             j++;
         }
+        return ans.size();
     }
 }
 int main(){
 
-  vector<int> a = {3, 1, 4, 2, 5};  
-  sort(a.begin(), a.end());  
-  cout<<"\nAfter sorting:  ";  
-  for_each(a.begin(),a.end(), [](int x) {  
-    cout << x << " ";  
-  }); 
+  vector<int> a = {3, 1, 4, 1, 5};  
   int k;
   cin>>k;
-  diff(a ,  k );
+  cout<<diff(a ,  k );
   return 0;  
 }  
 
